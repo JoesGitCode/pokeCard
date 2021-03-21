@@ -1,11 +1,19 @@
 import React, { Fragment } from 'react'
+import { Container } from 'react-bootstrap'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <Fragment>
-      <h1>Yoooo</h1>
+      <Header/>
+      <main className='py-3'>
+        <Container>
+          <h1>PokeCard</h1>
+        </Container>
+      </main>
+      <Footer/>
     </Fragment>
   );
 }
-
 export default App;
